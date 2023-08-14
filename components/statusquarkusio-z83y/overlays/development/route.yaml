@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: statusquarkusio-z83y
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: statusquarkusio-z83y
+    app.kubernetes.io/part-of: status-quarkus-io
+  name: statusquarkusio-z83y7rae
+spec:
+  path: /
+  port:
+    targetPort: 9081
+  to:
+    kind: Service
+    name: statusquarkusio-z83y
+    weight: null
+status: {}
